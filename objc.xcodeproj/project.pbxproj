@@ -26,8 +26,7 @@
 		39ABD72312F0B61800D1054C /* objc-weak.h in Headers */ = {isa = PBXBuildFile; fileRef = 39ABD71F12F0B61800D1054C /* objc-weak.h */; };
 		39ABD72412F0B61800D1054C /* objc-weak.mm in Sources */ = {isa = PBXBuildFile; fileRef = 39ABD72012F0B61800D1054C /* objc-weak.mm */; };
 		3F1BA99F1E14DA4E007C535F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BA99E1E14DA4E007C535F /* main.m */; };
-		3F1BA9A71E14DA72007C535F /* NewTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BA9A61E14DA72007C535F /* NewTarget.m */; };
-		3F1BA9AA1E14DA7F007C535F /* DataStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BA9A91E14DA7F007C535F /* DataStructure.m */; };
+		3F5AEB851E14F2A1000CAFA1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AEB841E14F2A1000CAFA1 /* Person.m */; };
 		830F2A740D737FB800392440 /* objc-msg-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 830F2A690D737FB800392440 /* objc-msg-arm.s */; };
 		830F2A750D737FB900392440 /* objc-msg-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 830F2A6A0D737FB800392440 /* objc-msg-i386.s */; };
 		830F2A7D0D737FBB00392440 /* objc-msg-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 830F2A720D737FB800392440 /* objc-msg-x86_64.s */; };
@@ -162,10 +161,8 @@
 		3F1BA9971E14D584007C535F /* pthread_machdep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pthread_machdep.h; sourceTree = "<group>"; };
 		3F1BA99C1E14DA4E007C535F /* debug-objc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "debug-objc"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1BA99E1E14DA4E007C535F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3F1BA9A51E14DA72007C535F /* NewTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTarget.h; sourceTree = "<group>"; };
-		3F1BA9A61E14DA72007C535F /* NewTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTarget.m; sourceTree = "<group>"; };
-		3F1BA9A81E14DA7F007C535F /* DataStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStructure.h; sourceTree = "<group>"; };
-		3F1BA9A91E14DA7F007C535F /* DataStructure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStructure.m; sourceTree = "<group>"; };
+		3F5AEB831E14F2A1000CAFA1 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		3F5AEB841E14F2A1000CAFA1 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		830F2A690D737FB800392440 /* objc-msg-arm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-msg-arm.s"; path = "runtime/Messengers.subproj/objc-msg-arm.s"; sourceTree = "<group>"; };
 		830F2A6A0D737FB800392440 /* objc-msg-i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-msg-i386.s"; path = "runtime/Messengers.subproj/objc-msg-i386.s"; sourceTree = "<group>"; };
 		830F2A720D737FB800392440 /* objc-msg-x86_64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-msg-x86_64.s"; path = "runtime/Messengers.subproj/objc-msg-x86_64.s"; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
@@ -435,11 +432,9 @@
 		3F1BA99D1E14DA4E007C535F /* debug-objc */ = {
 			isa = PBXGroup;
 			children = (
-				3F1BA9A81E14DA7F007C535F /* DataStructure.h */,
-				3F1BA9A91E14DA7F007C535F /* DataStructure.m */,
-				3F1BA9A51E14DA72007C535F /* NewTarget.h */,
-				3F1BA9A61E14DA72007C535F /* NewTarget.m */,
 				3F1BA99E1E14DA4E007C535F /* main.m */,
+				3F5AEB831E14F2A1000CAFA1 /* Person.h */,
+				3F5AEB841E14F2A1000CAFA1 /* Person.m */,
 			);
 			path = "debug-objc";
 			sourceTree = "<group>";
@@ -684,9 +679,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5AEB851E14F2A1000CAFA1 /* Person.m in Sources */,
 				3F1BA99F1E14DA4E007C535F /* main.m in Sources */,
-				3F1BA9AA1E14DA7F007C535F /* DataStructure.m in Sources */,
-				3F1BA9A71E14DA72007C535F /* NewTarget.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1090,6 +1084,7 @@
 				3F1BA9A21E14DA4E007C535F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		837F67A91A771F63004D34FA /* Build configuration list for PBXAggregateTarget "objc-simulator" */ = {
 			isa = XCConfigurationList;

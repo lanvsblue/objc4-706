@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DataStructure.h"
+#import "Person.h"
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        DataStructure *d = [[DataStructure alloc] init];
-        [d performSelector:@selector(haha)];
+        Person *person = [[Person alloc] init];
+        [person performSelector:@selector(sayHello)];
+        
+        NSLog(@"%@",[Person performSelector:@selector(species)]);
     }
     return 0;
 }
